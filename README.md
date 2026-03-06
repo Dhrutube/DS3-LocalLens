@@ -4,7 +4,7 @@
 
 ---
 
-## 🏗 Data Infrastructure & Pipeline
+## Data Infrastructure & Pipeline
 
 
 The project handles 5GB+ JSON files using a decentralized processing model to prevent memory crashes. 
@@ -16,7 +16,7 @@ The project handles 5GB+ JSON files using a decentralized processing model to pr
 
 ---
 
-## 🛠 Technical Stack
+## Technical Stack
 
 | Category | Tool | Implementation Detail |
 | :--- | :--- | :--- |
@@ -30,7 +30,7 @@ The project handles 5GB+ JSON files using a decentralized processing model to pr
 
 ---
 
-## 📊 Data Schema
+## Data Schema
 We merge two primary datasets to generate our insights:
 
 ### Review Datasets
@@ -47,7 +47,7 @@ We merge two primary datasets to generate our insights:
 
 ---
 
-## 📈 Roadmap & Progress
+## Roadmap & Progress
 * [x] **Phase 1-3:** Setup, Initial EDA, and Goal Definition.
 * [/] **Phase 4-6:** Data Cleaning, Feature Engineering (Z-Scores), and Dashboard Prototyping.
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
@@ -63,3 +63,4 @@ We merge two primary datasets to generate our insights:
 ├── src/                # .py scripts for data pipelines
 ├── outputs/            # Exported charts and PDF reports
 └── README.md           # Project entry point
+

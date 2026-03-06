@@ -2,19 +2,93 @@
 
 **Local Lens** is a data engineering and analytics project designed to transform raw Google Reviews data into actionable business intelligence. By processing large-scale datasets, we aim to recommend business expansion locations based on market density and sentiment, while helping customers identify the best businesses through statistical normalization.
 
+The final product is an interactive Tableau dashboard that gives customers and businesses a new lens through which to search for their next meal or decide where to locate across two different cities.
+
+**Live Dashboard**: ___________addlink___________
+
 ---
+## Data Collection
 
-## Data Infrastructure & Pipeline
+This project used multiple data sources
+
+1. **Mcauleylab.ucsd.edu Google Local Data (2021):** A web-scraped dataset containing individual review data and aggregate review trends for every business in every state in the United States.
+   - Metadata:
+  
 
 
-The project handles 5GB+ JSON files using a decentralized processing model to prevent memory crashes. 
+### Metadata Datasets
 
-* **Ingestion:** Utilizes custom `parse()` generators to stream data without loading the entire metadata object.
+* **name**: Name of business.
+* **category**: List of relevant business categories.
+* **latitude / longitude**: Geographic location of business.
+* **price**: Relative price rating ($ to $$$$).
+   - Review Data:
+
+### Review Datasets
+
+* **user_id**: Unique identifier for the user.
+* **rating**: 1-5 star rating.
+* **text**: Review of business.
+* **gmap_id**: Unique identifier for business.
+
+2. **simplemaps.com United States Cities Database:** City longitude and latitude as well as population statistics.
+   - (fill in )
+
+3. **The complete google business categories list (updated 2025)**: A dataset dividing complex google categories into subcategories and main larger categories for data set grouping.
+   - (filll in)
+
+
+
+
+## Data Processing and Feature Engineering
+
 * **Processing:** Includes sentiment analysis via **VADER**, feature engineering (Chain vs. Independent), and **Z-Score** normalization.
 * **Storage:** Flattened CSV files managed via GitHub for version-controlled, BI-ready exports.
-* **Presentation:** Exploratory analysis using **Plotly** and executive-facing dashboards in **Tableau** and **Power BI**.
+(add more)
+
+## Sentiment Analyis
+
+(Aurora add in)
+
+
+## Tableau Dashboard
+
+1. The Customer Lens
+   -
+
+2. The Business lens
+   -
+
+## Acessing the Dashabord
+
+___link to tableau public.com____
+
+
+# How to use the customer lens
+
+
+# How top use the Business lens
+
+
+
 
 ---
+
+UPDATE this
+|
+|
+|
+V
+## 📂 Repostiory Structure
+```plaintext
+├── data/
+│   ├── raw/            # Original, untouched data
+│   └── processed/      # Cleaned data ready for BI
+├── notebooks/          # .ipynb files for EDA and Plotly
+├── src/                # .py scripts for data pipelines
+├── outputs/            # Exported charts and PDF reports
+└── README.md           # Project entry point
+```
 
 ## Technical Stack
 
@@ -30,22 +104,19 @@ The project handles 5GB+ JSON files using a decentralized processing model to pr
 
 ---
 
-## Data Schema
-We merge two primary datasets to generate our insights:
+## Key Insights 
 
-### Review Datasets
-* **user_id**: Unique identifier for the user.
-* **rating**: 1-5 star rating.
-* **text**: Review of business.
-* **gmap_id**: Unique identifier for business.
-
-### Metadata Datasets
-* **name**: Name of business.
-* **category**: List of relevant business categories.
-* **latitude / longitude**: Geographic location of business.
-* **price**: Relative price rating ($ to $$$$).
 
 ---
+
+
+## Future Enhancements
+
+---
+
+## Project information
+
+## Citation
 
 ## Roadmap & Progress
 * [x] **Phase 1-3:** Setup, Initial EDA, and Goal Definition.
@@ -54,13 +125,5 @@ We merge two primary datasets to generate our insights:
 
 ---
 
-## 📂 Directory Structure
-```plaintext
-├── data/
-│   ├── raw/            # Original, untouched data
-│   └── processed/      # Cleaned data ready for BI
-├── notebooks/          # .ipynb files for EDA and Plotly
-├── src/                # .py scripts for data pipelines
-├── outputs/            # Exported charts and PDF reports
-└── README.md           # Project entry point
+
 

@@ -1,53 +1,64 @@
 # 🔍 Local Lens: Google Reviews Analytics
 
-[cite_start]**Local Lens** is a data engineering and business intelligence project designed to transform raw Google Reviews data into actionable insights for business expansion and consumer decision-making[cite: 9].
+[cite_start]**Local Lens** is a data engineering and analytics project designed to transform raw Google Reviews data into actionable business intelligence[cite: 9]. [cite_start]By processing large-scale datasets, we aim to recommend business expansion locations based on market density and sentiment, while helping customers identify the best businesses through statistical normalization[cite: 10, 11].
 
 ---
 
-## 📍 Project Overview
-Our team is tackling the challenge of "rating inflation" and geographic data density to answer two core questions:
-1. [cite_start]**Business Strategy:** How do we recommend where businesses should locate based on market gaps? [cite: 10]
-2. [cite_start]**Consumer Insight:** How do we help customers choose the best company by normalizing "harsh" vs. "easy" review cultures? [cite: 11, 24]
-
 ## 🏗 Data Infrastructure & Pipeline
+[cite_start]The project handles 5GB+ JSON files using a decentralized processing model to prevent memory crashes[cite: 15].
 
+* [cite_start]**Ingestion:** Utilizes custom `parse()` generators to stream data without loading the entire metadata object[cite: 16, 17].
+* [cite_start]**Processing:** Includes sentiment analysis via **VADER**, feature engineering (Chain vs. Independent), and **Z-Score** normalization[cite: 21, 22, 23].
+* [cite_start]**Storage:** Flattened CSV files managed via GitHub for version-controlled, BI-ready exports[cite: 27, 29, 31].
+* [cite_start]**Presentation:** Exploratory analysis using **Plotly** and executive-facing dashboards in **Tableau** and **Power BI**[cite: 33, 35, 36].
 
-[cite_start]To handle large-scale datasets (5GB+ JSON files) without memory crashes, we implemented a decentralized processing model[cite: 13, 15]:
-
-* [cite_start]**Ingestion:** Used custom `parse()` generators to stream data and filter for specific columns (`gmap_id`, `rating`, `text`) without loading entire metadata objects[cite: 16, 17].
-* [cite_start]**Processing:** * **Sentiment Analysis:** Utilized **VADER** to generate "Compound Scores" for review text[cite: 19, 21].
-    * [cite_start]**Feature Engineering:** Created `Is_Brand` (Chain vs. Independent) and `Urban_Rural` tags[cite: 22].
-    * [cite_start]**Statistical Normalization:** Applied `StandardScaler` to calculate **Z-Scores**, allowing fair comparisons across different regions[cite: 23, 24].
-* [cite_start]**Storage:** Flattened nested JSON data into optimized CSV tables for faster BI loading[cite: 29, 30].
+---
 
 ## 🛠 Technical Stack
+
 | Category | Tool | Implementation Detail |
 | :--- | :--- | :--- |
-| **Development** | VS Code | [cite_start]Environment for Python and Jupyter Notebooks[cite: 38]. |
-| **Analysis** | Python | [cite_start]Pandas, NumPy, and NLTK (VADER)[cite: 38]. |
-| **Normalization** | Scikit-Learn | [cite_start]`StandardScaler` for cross-state score normalization[cite: 38]. |
-| **Visualization** | Plotly | [cite_start]Interactive EDA and distribution visualizations[cite: 38]. |
-| **BI Reporting** | Tableau/Power BI | [cite_start]Final interactive executive dashboards[cite: 38]. |
-| **Version Control** | GitHub | [cite_start]Managing code, documentation, and data versions[cite: 31, 38]. |
+| **Development** | VS Code | [cite_start]Primary environment for Python/Jupyter scripts[cite: 38]. |
+| **Analysis** | Python | [cite_start]Pandas, NumPy, and NLTK (VADER) for sentiment[cite: 38]. |
+| **Visualization** | Plotly | [cite_start]Interactive EDA and trend identification[cite: 38]. |
+| **BI Reporting** | Tableau | [cite_start]Final interactive dashboards, insights, and recommendations[cite: 38]. |
+| **Version Control** | GitHub | [cite_start]Managing code, documentation, and version tracking[cite: 38]. |
+| **Data Ingestion** | Glob | [cite_start]Programmatically grabbing all `.json.gz` files from data folders[cite: 38]. |
+| **Statistics** | Scikit-Learn | [cite_start]Used `StandardScaler` to normalize scores across different states[cite: 38]. |
+
+---
 
 ## 📊 Data Schema
-We utilize two primary datasets provided by Google Reviews:
-* [cite_start]**Review Data:** `user_id`, `rating`, `text`, `time`, and `gmap_id`[cite: 41].
-* [cite_start]**Metadata:** Business `name`, `category`, `latitude/longitude`, `price` level, and `state` status[cite: 43].
+We merge two primary datasets to generate our insights:
+
+### Review Datasets
+* [cite_start]**user_id**: Unique identifier for the user[cite: 41].
+* **rating**: 1-5 star rating[cite: 41].
+* [cite_start]**text**: Review of business[cite: 41].
+* [cite_start]**gmap_id**: Unique identifier for business[cite: 41].
+
+### Metadata Datasets
+* [cite_start]**name**: Name of business[cite: 43].
+* [cite_start]**category**: List of relevant business categories[cite: 43].
+* [cite_start]**latitude / longitude**: Geographic location of business[cite: 43].
+* [cite_start]**price**: Relative price rating ($ to $$$$)[cite: 43].
+
+---
 
 ## 📈 Roadmap & Progress
-- [x] [cite_start]**Phase 1-3:** Repository initialization and project direction[cite: 45, 47].
-- [x] [cite_start]**Phase 4-5:** Data cleaning, outlier handling, and Z-score implementation[cite: 48, 50].
-- [ ] [cite_start]**Phase 6-8:** Dashboard creation in Tableau and "Review Culture" parameter updates[cite: 52, 56].
-- [ ] [cite_start]**Phase 9-10:** Finalizing state-specific datasets (TX, CA, NY) and Dino Cage Presentation preparation[cite: 58, 59].
+* [cite_start][x] **Phase 1-3:** Setup, Initial EDA, and Goal Definition[cite: 45, 46, 47].
+* [cite_start][/] **Phase 4-6:** Data Cleaning, Feature Engineering (Z-Scores), and Dashboard Prototyping[cite: 48, 50, 52].
+* [cite_start][ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation[cite: 56, 58, 59].
+
+---
 
 ## 📂 Directory Structure
-```text
+```plaintext
 ├── data/
-│   ├── raw/            # Original, untouched data [cite: 63]
-│   └── processed/      # Cleaned data ready for Power BI [cite: 64]
-├── notebooks/          # .ipynb files for EDA and Plotly [cite: 65]
-├── src/                # .py scripts for data pipelines [cite: 66]
-├── outputs/            # Exported charts and PDF reports [cite: 67]
-├── README.md           # Project entry point [cite: 68]
-└── DESIGN_DOC.md       # Full design documentation [cite: 69]
+[cite_start]│   ├── raw/            # Original, untouched data [cite: 63]
+[cite_start]│   └── processed/      # Cleaned data ready for BI [cite: 64]
+[cite_start]├── notebooks/          # .ipynb files for EDA and Plotly [cite: 65]
+[cite_start]├── src/                # .py scripts for data pipelines [cite: 66]
+[cite_start]├── outputs/            # Exported charts and PDF reports [cite: 67]
+[cite_start]└── README.md           # This document [cite: 68]
+

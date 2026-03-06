@@ -3,6 +3,7 @@
 Project Overview
 
 Local Lens is a data engineering and analytics project designed to transform raw Google Reviews data into actionable business intelligence. By processing large-scale datasets, we aim to:
+
 Optimize Business Location: Recommend where companies should expand based on market density and sentiment.
 Enhance Customer Choice: Help users identify the best businesses by reevaluating ratings through statistical normalization.
 
@@ -58,3 +59,4 @@ Karsten Lowe
 Aurora Cong
 Ngo Nguyen Anh Tran
 Project Lead: Dhruv Sehgal
+

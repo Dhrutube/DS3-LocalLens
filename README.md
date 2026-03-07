@@ -72,7 +72,7 @@ This project used multiple data sources
 2. The Business lens
    -
 
-## Accessing the Dashabord
+## Accessing the Dashboard
 
 ___link to tableau public.com____
 
@@ -162,6 +162,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

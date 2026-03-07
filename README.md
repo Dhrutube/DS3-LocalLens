@@ -16,7 +16,7 @@ https://public.tableau.com/shared/XMMQ7FD7R?:display_count=n&:origin=viz_share_l
 
 This project uses multiple datasets from external sources.
 
-## Google Local Data – McAuley Lab (UC San Diego)
+### Google Local Data – McAuley Lab (UC San Diego)
 
 Source:  
 https://mcauleylab.ucsd.edu/public_datasets/gdrive/googlelocal/
@@ -341,6 +341,7 @@ Combining these variables with existing competition and sentiment metrics would 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

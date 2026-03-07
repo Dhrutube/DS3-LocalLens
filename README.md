@@ -289,6 +289,14 @@ Several limitations should be considered when interpreting this analysis:
   * TF-IDF highlights frequent phrases, but it does not capture deeper context or sarcasm.
 For these reasons, the analysis should be interpreted as directional insights into customer themes rather than a definitive sentiment score.
 
+### Categorization
+
+Categorizing companies into a single category was a challenge in this project.
+
+- Categories were originally stored in a list format, so we used the `.explode()` method to separate them into individual rows.
+- This created multiple rows per company. Afterward, we joined the Google categories dataset on `category_name` to assign broader category labels.
+- Because these categories were often too broad for detailed analysis, we created a **competition score** and an **overall category-relative score** to enable more meaningful comparisons between businesses.
+
 ## 📂 Repository Structure
 ```plaintext
 
@@ -322,10 +330,6 @@ For these reasons, the analysis should be interpreted as directional insights in
 | **Data Ingestion** | Glob | Programmatically grabbing all `.json.gz` files from data folders. |
 | **Statistics** | Scikit-Learn | Used `StandardScaler` to normalize scores across different states. |
 
----
-
-## Key Insights 
-
 
 ---
 
@@ -352,6 +356,7 @@ Combining these variables with existing competition and sentiment metrics would 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

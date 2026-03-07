@@ -69,18 +69,15 @@ This project used multiple data sources
 ## The Customer Lens
    ### Overview: 
    The Customer Lens focuses on understanding customer behavior and satisfaction across different businesses and locations. This view allows users to explore how customers interact with businesses based on reviews, ratings, and geographic distribution.
-   b) Map Visualization:
-   The map displays businesses geographically using latitude and longitude coordinates. Each point on the map represents an individual business.
-
-Color indicates the competition score (or selected metric), helping highlight areas with higher or lower competition.
-
-Size represents the number of reviews, which acts as a proxy for customer engagement or popularity.
-
-Larger circles indicate businesses that receive more customer reviews.
+   ### Map Visualization:
+   + The map displays businesses geographically using latitude and longitude coordinates. Each point on the map represents an individual business.
+   + Color indicates the competition score (or selected metric), helping highlight areas with higher or lower competition.
+   + Size represents the number of reviews, which acts as a proxy for customer engagement or popularity.
+   + Larger circles indicate businesses that receive more customer reviews.
 
 This visualization helps users identify areas with highly reviewed businesses and varying levels of competition.
 
-2. The Business lens
+## The Business lens
    
 
 ## Accessing the Dashboard
@@ -175,6 +172,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

@@ -285,13 +285,23 @@ This visualization helps identify categories with **stable vs highly variable cu
 
 ## 📂 Repostiory Structure
 ```plaintext
+
+
 ├── data/
-│   ├── raw/            # Original, untouched data
-│   └── processed/      # Cleaned data ready for BI
-├── notebooks/          # .ipynb files for EDA and Plotly
-├── src/                # .py scripts for data pipelines
+│   ├── raw (metadata and reviews datasets)/            # Original, untouched data
+│   └── processed (https://drive.google.com/drive/folders/1qB_tD36dqhy8q3UVVJqxr3pASNrUNSBu)/      
+# Cleaned data ready
+├── notebooks/          # .ipynb files for EDA and Tableau
+│   ├──Brands_and_Reviews_Analysis/            # Analysis of Branding and Reviews Raw Datasets
+│   ├──Generalized_Reviews_Analysis/            # Generalized Analysis of Reviews Raw Datasets
+│   ├──Normalizing_Review_Culture/            # Score notebook for Tableau
+│   ├──Volatility_analysis_refined/            # Volatility Analysis
+│   └── rural_vs_suburban_vs_urban_refined/      # Region analysis and classification
+
 ├── outputs/            # Exported charts and PDF reports
-└── README.md           # Project entry point
+│   └── Tableau Combined Dashboard/      # Combined Processed Data Into A Dashboard
+├── README.md           # Project entry point
+└── DESIGN_DOC.md       # This document
 ```
 
 ## Technical Stack
@@ -336,6 +346,7 @@ Combining these variables with existing competition and sentiment metrics would 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

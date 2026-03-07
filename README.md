@@ -64,10 +64,10 @@ This project used multiple data sources
          * Examples of extracted phrases include: fast service, friendly staff, slow service
          * These phrases were then compiled into a dataset used for visualization in Tableau.
 
-## Tableau Dashboard
+# Tableau Dashboard
 
-# The Customer Lens
-   a) Overview: 
+## The Customer Lens
+   ### Overview: 
    The Customer Lens focuses on understanding customer behavior and satisfaction across different businesses and locations. This view allows users to explore how customers interact with businesses based on reviews, ratings, and geographic distribution.
    b) Map Visualization:
    The map displays businesses geographically using latitude and longitude coordinates. Each point on the map represents an individual business.
@@ -175,6 +175,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

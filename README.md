@@ -76,14 +76,14 @@ This project used multiple data sources
    + Larger circles indicate businesses that receive more customer reviews.
 
 This visualization helps users identify areas with highly reviewed businesses and varying levels of competition.
-   ## Filters
+   ### Filters
 Users can interact with the dashboard using the following filters:
    + Choose Category – Allows users to select specific business categories to analyze customer activity within those industries.
    + Choose City – Filters the map to focus on specific cities.
    + Choose State – Filters the data by state to explore regional patterns.
 These filters allow users to narrow the analysis to specific markets and industries.
 
-   ## Metric Selector
+   ### Metric Selector
 A dropdown menu allows users to switch between different metrics used to evaluate business environments:
    + Niche Competition Score – Measures competition within more specific business niches.
    + Broad Competition Score – Measures competition across broader business categories.
@@ -92,7 +92,7 @@ A dropdown menu allows users to switch between different metrics used to evaluat
 
 This feature enables users to explore multiple perspectives on competition and market performance.
 
-   ## Purpose
+   ### Purpose
 The Customer Lens helps users understand where customers are actively engaging with businesses and how customer activity varies across locations and industries. By combining review counts, geographic distribution, and competition metrics, this view provides insight into customer demand and competitive landscapes.
 
 ## The Business lens
@@ -199,6 +199,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

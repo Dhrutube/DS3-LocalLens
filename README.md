@@ -12,7 +12,7 @@ The final product is an interactive Tableau dashboard that gives customers and b
 https://public.tableau.com/shared/XMMQ7FD7R?:display_count=n&:origin=viz_share_link
 
 ---
-## Data Collection
+# Data Collection
 
 This project uses multiple datasets from external sources.
 
@@ -69,44 +69,52 @@ This dataset provides a structured list of Google Business categories and was us
 * **Storage:** Flattened CSV files managed via GitHub for version-controlled, BI-ready exports.
 (add more)
 
-## Sentiment Analyis (TF-IDF)
+---
 
-1. Review Segmentation
-      * Reviews were grouped based on:
-         * Area type: Urban, Suburban, Rural
-         * Business type: Restaurant vs. Non-Restaurant
-         * Sentiment group: Positive reviews vs. Negative reviews (based on star ratings)
-      * This segmentation allowed us to compare how customer priorities differ across geographic and business contexts.
+## Sentiment Analysis (TF-IDF)
 
-2. Text Processing
-      * Extracted bigrams (two-word phrases) to capture more meaningful expressions such as “fast service” or “friendly staff”
-      * We used TF-IDF (Term Frequency–Inverse Document Frequency) to identify phrases that were important within each review group.
+### 1. Review Segmentation
 
-3. Extracting Key Themes
-      * For each segment (e.g., Urban Restaurants – Positive Reviews), we computed the top 20 bigrams with the highest TF-IDF scores. These phrases represent themes that frequently appear in that segment's reviews while remaining distinctive compared to other reviews.
-         * Examples of extracted phrases include: fast service, friendly staff, slow service
-         * These phrases were then compiled into a dataset used for visualization in Tableau.
+Reviews were grouped based on:
+
+- Area type: Urban, Suburban, Rural
+- Business type: Restaurant vs. Non-Restaurant
+- Sentiment group: Positive reviews vs. Negative reviews (based on star ratings)
+
+This segmentation allowed us to compare how customer priorities differ across geographic and business contexts.
+
+### 2. Text Processing
+
+- Extracted bigrams (two-word phrases) to capture more meaningful expressions such as “fast service” or “friendly staff”
+- We used TF-IDF (Term Frequency–Inverse Document Frequency) to identify phrases that were important within each review group.
+
+### 3. Extracting Key Themes
+
+For each segment (e.g., Urban Restaurants – Positive Reviews), we computed the top 20 bigrams with the highest TF-IDF scores.
+
+These phrases represent themes that frequently appear in that segment's reviews while remaining distinctive compared to other reviews.
+
+Examples of extracted phrases include:
+
+- fast service  
+- friendly staff  
+- slow service  
+These phrases were then compiled into a dataset used for visualization in Tableau.
 
 ---
 
 # Tableau Dashboard
-
 The final Tableau dashboard provides multiple analytical perspectives on the dataset.
 
 ---
+## The Customer Lens
 
-# The Customer Lens
-
-## Overview
-
+### Overview
 The **Customer Lens** focuses on understanding customer behavior and satisfaction across different businesses and locations.
-
 This view allows users to explore how customers interact with businesses based on reviews, ratings, and geographic distribution.
 
 ---
-
-## Map Visualization
-
+### Map Visualization
 The map displays businesses geographically using latitude and longitude coordinates.
 
 Each point represents a business.
@@ -120,7 +128,7 @@ This helps identify areas with **high customer engagement and varying competitio
 
 ---
 
-## Filters
+### Filters
 
 Users can interact with the dashboard using:
 
@@ -129,7 +137,7 @@ Users can interact with the dashboard using:
 - **Choose State** – explore regional trends
 
 ---
-## Metric Selector
+### Metric Selector
 
 Users can switch between several metrics:
 
@@ -140,20 +148,17 @@ Users can switch between several metrics:
 
 This allows exploration of different perspectives on competition and demand.
 
-
 ---
 
-# The Business Lens
+## The Business Lens
 
-## Overview
-
+### Overview
 The **Business Lens** focuses on identifying potential market opportunities for businesses across locations and industries.
-
 It helps evaluate where new businesses may have stronger opportunities based on **opportunity scores and competition levels**.
 
 ---
 
-## Map Visualization
+### Map Visualization
 
 The map shows the geographic distribution of businesses across selected states.
 
@@ -164,7 +169,7 @@ This highlights regions where **market opportunities may be stronger**.
 
 ---
 
-## Filters
+### Filters
 
 - **State** – filter by geographic region
 - **City** – focus on local markets
@@ -172,7 +177,7 @@ This highlights regions where **market opportunities may be stronger**.
 
 ---
 
-## Opportunity vs Competition Scatter Plot
+### Opportunity vs Competition Scatter Plot
 
 The scatter plot compares **opportunity scores and competition levels**.
 
@@ -201,9 +206,9 @@ Low opportunity + high competition
 
 ---
 
-# Sentiment Analysis Lens
+## Sentiment Analysis Lens
 
-## Overview
+### Overview
 
 The **Sentiment Lens** analyzes the language used in customer reviews to uncover common themes in positive and negative feedback.
 
@@ -211,7 +216,7 @@ This helps identify the factors that influence customer satisfaction and dissati
 
 ---
 
-## Map of States
+### Map of States
 
 The map displays the states included in the review dataset.
 
@@ -219,21 +224,21 @@ Selecting a state allows users to analyze sentiment patterns for that region.
 
 ---
 
-## Top Positive Bigrams
+### Top Positive Bigrams
 
 This chart shows the most common phrases appearing in **positive reviews**
 These phrases highlight aspects of businesses that customers value the most.
 
 ---
 
-## Top Negative Bigrams
+### Top Negative Bigrams
 
 This chart shows phrases frequently appearing in **negative reviews**
 These phrases reveal common issues customers encounter.
 
 ---
 
-## Filters
+### Filters
 
 Users can analyze sentiment using:
 
@@ -252,13 +257,13 @@ These filters allow comparisons of customer feedback across different environmen
 
 ---
 
-# Review Volatility
+## Review Volatility
 
 The **Review Volatility dashboard** explores how review patterns vary across states, business categories, and geographic regions.
 
 ---
 
-## Filters
+### Filters
 
 Users can explore volatility using:
 
@@ -268,7 +273,7 @@ Users can explore volatility using:
 
 ---
 
-## Charts
+### Charts
 
 ### Map
 
@@ -338,6 +343,7 @@ Combining these variables with existing competition and sentiment metrics would 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

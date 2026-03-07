@@ -9,7 +9,7 @@ The final product is an interactive Tableau dashboard that gives customers and b
 # Accessing the Dashboard
 
 👉 **Live Tableau Dashboard:**  
-https://public.tableau.com/views/your-dashboard-link
+https://public.tableau.com/shared/XMMQ7FD7R?:display_count=n&:origin=viz_share_link
 
 ---
 ## Data Collection
@@ -281,6 +281,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

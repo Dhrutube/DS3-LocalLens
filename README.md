@@ -37,9 +37,7 @@ This dataset contains web-scraped Google Maps review data and business metadata 
 - **text** – Customer review text  
 - **gmap_id** – Unique identifier for the business
 
----
-
-## United States Cities Database
+### United States Cities Database
 
 Source:  
 https://simplemaps.com/data/us-cities
@@ -52,9 +50,8 @@ This dataset provides geographic information about U.S. cities, including:
 
 It was used to match businesses to the **closest city location** using geographic coordinates.
 
----
 
-## Google Business Categories Dataset
+### Google Business Categories Dataset
 
 Source:  
 https://www.lobstr.io/blog/google-business-categories
@@ -71,9 +68,9 @@ This dataset provides a structured list of Google Business categories and was us
 
 ---
 
-## Sentiment Analysis (TF-IDF)
+### Sentiment Analysis (TF-IDF)
 
-### 1. Review Segmentation
+#### 1. Review Segmentation
 
 Reviews were grouped based on:
 
@@ -83,12 +80,12 @@ Reviews were grouped based on:
 
 This segmentation allowed us to compare how customer priorities differ across geographic and business contexts.
 
-### 2. Text Processing
+#### 2. Text Processing
 
 - Extracted bigrams (two-word phrases) to capture more meaningful expressions such as “fast service” or “friendly staff”
 - We used TF-IDF (Term Frequency–Inverse Document Frequency) to identify phrases that were important within each review group.
 
-### 3. Extracting Key Themes
+#### 3. Extracting Key Themes
 
 For each segment (e.g., Urban Restaurants – Positive Reviews), we computed the top 20 bigrams with the highest TF-IDF scores.
 
@@ -103,18 +100,18 @@ These phrases were then compiled into a dataset used for visualization in Tablea
 
 ---
 
-# Tableau Dashboard
+## Tableau Dashboard
 The final Tableau dashboard provides multiple analytical perspectives on the dataset.
 
 ---
-## The Customer Lens
+### The Customer Lens
 
-### Overview
+#### Overview
 The **Customer Lens** focuses on understanding customer behavior and satisfaction across different businesses and locations.
 This view allows users to explore how customers interact with businesses based on reviews, ratings, and geographic distribution.
 
 ---
-### Map Visualization
+#### Map Visualization
 The map displays businesses geographically using latitude and longitude coordinates.
 
 Each point represents a business.
@@ -128,7 +125,7 @@ This helps identify areas with **high customer engagement and varying competitio
 
 ---
 
-### Filters
+#### Filters
 
 Users can interact with the dashboard using:
 
@@ -137,7 +134,7 @@ Users can interact with the dashboard using:
 - **Choose State** – explore regional trends
 
 ---
-### Metric Selector
+#### Metric Selector
 
 Users can switch between several metrics:
 
@@ -150,15 +147,15 @@ This allows exploration of different perspectives on competition and demand.
 
 ---
 
-## The Business Lens
+### The Business Lens
 
-### Overview
+#### Overview
 The **Business Lens** focuses on identifying potential market opportunities for businesses across locations and industries.
 It helps evaluate where new businesses may have stronger opportunities based on **opportunity scores and competition levels**.
 
 ---
 
-### Map Visualization
+#### Map Visualization
 
 The map shows the geographic distribution of businesses across selected states.
 
@@ -169,7 +166,7 @@ This highlights regions where **market opportunities may be stronger**.
 
 ---
 
-### Filters
+#### Filters
 
 - **State** – filter by geographic region
 - **City** – focus on local markets
@@ -177,7 +174,7 @@ This highlights regions where **market opportunities may be stronger**.
 
 ---
 
-### Opportunity vs Competition Scatter Plot
+#### Opportunity vs Competition Scatter Plot
 
 The scatter plot compares **opportunity scores and competition levels**.
 
@@ -186,7 +183,7 @@ The scatter plot compares **opportunity scores and competition levels**.
 
 The chart is divided into four quadrants based on average values.
 
-### Quadrant Interpretation
+#### Quadrant Interpretation
 
 **Top-left**  
 High opportunity + low competition  
@@ -206,9 +203,9 @@ Low opportunity + high competition
 
 ---
 
-## Sentiment Analysis Lens
+### Sentiment Analysis Lens
 
-### Overview
+#### Overview
 
 The **Sentiment Lens** analyzes the language used in customer reviews to uncover common themes in positive and negative feedback.
 
@@ -216,7 +213,7 @@ This helps identify the factors that influence customer satisfaction and dissati
 
 ---
 
-### Map of States
+#### Map of States
 
 The map displays the states included in the review dataset.
 
@@ -224,31 +221,31 @@ Selecting a state allows users to analyze sentiment patterns for that region.
 
 ---
 
-### Top Positive Bigrams
+#### Top Positive Bigrams
 
 This chart shows the most common phrases appearing in **positive reviews**
 These phrases highlight aspects of businesses that customers value the most.
 
 ---
 
-### Top Negative Bigrams
+#### Top Negative Bigrams
 
 This chart shows phrases frequently appearing in **negative reviews**
 These phrases reveal common issues customers encounter.
 
 ---
 
-### Filters
+#### Filters
 
 Users can analyze sentiment using:
 
-### Area Type
+#### Area Type
 
 - Urban  
 - Suburban  
 - Rural  
 
-### Business Type
+#### Business Type
 
 - Restaurant  
 - Non-Restaurant  
@@ -257,13 +254,13 @@ These filters allow comparisons of customer feedback across different environmen
 
 ---
 
-## Review Volatility
+### Review Volatility
 
 The **Review Volatility dashboard** explores how review patterns vary across states, business categories, and geographic regions.
 
 ---
 
-### Filters
+#### Filters
 
 Users can explore volatility using:
 
@@ -273,13 +270,13 @@ Users can explore volatility using:
 
 ---
 
-### Charts
+#### Charts
 
-### Map
+#### Map
 
 Hover over a state to see summary metrics and click to update the volatility chart.
 
-### Line Chart
+#### Line Chart
 
 Businesses are grouped into **bins based on number of reviews**, and the top categories per state are displayed based on volatility.
 
@@ -341,6 +338,7 @@ Combining these variables with existing competition and sentiment metrics would 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

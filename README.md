@@ -138,7 +138,9 @@ V
 
 ## Project information
 
-## Citation
+## Citation:
+Li, J. (n.d.). Google Local review data. https://mcauleylab.ucsd.edu/public_datasets/gdrive/googlelocal/
+The complete Google Business Categories list [Updated 2025]. (2024, November 6). https://www.lobstr.io/blog/google-business-categories
 
 ## Roadmap & Progress
 * [x] **Phase 1-3:** Setup, Initial EDA, and Goal Definition.
@@ -146,6 +148,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

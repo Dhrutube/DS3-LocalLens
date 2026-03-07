@@ -88,10 +88,10 @@ For the Scatter Plot: compares opportunity and competition for businesses.
    + Y-axis: Opportunity Score
    + The chart is divided into four quadrants using average values, which represent different market conditions.
        
-        Top-left: high opportunity score and low competition => Good market for new businesses.
-        Top-right: high opportunity score and high comptetition => Strong market but competitive.
-        Bottom-left: low opportunity score and low competition => Weak market with low demand.
-        Bottom-right: low opportunity score and high competition => Saturated market with many competitors.
+     Top-left: high opportunity score and low competition => Good market for new businesses.
+     Top-right: high opportunity score and high comptetition => Strong market but competitive.
+     Bottom-left: low opportunity score and low competition => Weak market with low demand.
+     Bottom-right: low opportunity score and high competition => Saturated market with many competitors.
 
 ---
 
@@ -145,6 +145,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

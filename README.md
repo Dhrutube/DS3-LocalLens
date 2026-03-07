@@ -67,10 +67,30 @@ ___link to tableau public.com____
 # How to use the customer lens
 
 
-# How top use the Business lens
+# How to use the Business lens
+   ## Filter:
+1. State: Select the state you want to analyze.
+2. City: Choose a city within the selected state to focus on a more specific local market.
+3. Broad Category: Select the business category you want to explore
 
+   ## Chart:
+For the map: The map visualization shows the geographic distribution of businesses based on the opportunity score. 
+Colors represent the opportunity score, allowing users to quickly identify areas where business opportunities may be higher. This helps users understand where potential market opportunities are concentrated geographically.
 
+For the Bar Chart:
+   + Top Categories: The Top Categories chart ranks business industries based on their average opportunity score.
+   => This helps identify: which industries may have stronger market potential and which categories appear to have higher opportunity overall.
+   + Top Cities: The Top Cities chart ranks cities based on their average opportunity score.
+   => This helps users understand: which cities may provide better business opportunities and how opportunity varies across different locations.
 
+For the Scatter Plot: compares opportunity and competition for businesses.
+   + X-axis: Competition Score
+   + Y-axis: Opportunity Score
+   + The chart is divided into four quadrants using average values, which represent different market conditions.
+        Top-left: high opportunity score and low competition => Good market for new businesses.
+        Top-right: high opportunity score and high comptetition => Strong market but competitive.
+        Bottom-left: low opportunity score and low competition => Weak market with low demand.
+        Bottom-right: low opportunity score and high competition => Saturated market with many competitors.
 
 ---
 
@@ -124,6 +144,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

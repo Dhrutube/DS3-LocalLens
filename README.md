@@ -49,11 +49,11 @@ This project used multiple data sources
 ## Sentiment Analyis (TF-IDF)
 
 1. Review Segmentation
-      Reviews were grouped based on:
-         Area type: Urban, Suburban, Rural
-         Business type: Restaurant vs. Non-Restaurant
-         Sentiment group: Positive reviews vs. Negative reviews (based on star ratings)
-   This segmentation allowed us to compare how customer priorities differ across geographic and business contexts.
+      *Reviews were grouped based on:
+         *Area type: Urban, Suburban, Rural
+         *Business type: Restaurant vs. Non-Restaurant
+         *Sentiment group: Positive reviews vs. Negative reviews (based on star ratings)
+      *This segmentation allowed us to compare how customer priorities differ across geographic and business contexts.
 
 
 ## Tableau Dashboard
@@ -154,6 +154,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

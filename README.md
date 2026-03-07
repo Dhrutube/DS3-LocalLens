@@ -68,11 +68,11 @@ This project used multiple data sources
 
 ## The Customer Lens
    ### Overview: 
-   The Customer Lens focuses on understanding customer behavior and satisfaction across different businesses and locations. This view allows users to explore how customers interact with businesses based on reviews, ratings, and geographic distribution.
+The Customer Lens focuses on understanding customer behavior and satisfaction across different businesses and locations. This view allows users to explore how customers interact with businesses based on reviews, ratings, and geographic distribution.
    ### Map Visualization:
    + The map displays businesses geographically using latitude and longitude coordinates. Each point on the map represents an individual business.
    + Color indicates the competition score (or selected metric), helping highlight areas with higher or lower competition.
-   + Size represents the number of reviews, which acts as a proxy for customer engagement or popularity.
+   + Size represents the number of reviews
    + Larger circles indicate businesses that receive more customer reviews.
 
 This visualization helps users identify areas with highly reviewed businesses and varying levels of competition.
@@ -96,7 +96,24 @@ This feature enables users to explore multiple perspectives on competition and m
 The Customer Lens helps users understand where customers are actively engaging with businesses and how customer activity varies across locations and industries. By combining review counts, geographic distribution, and competition metrics, this view provides insight into customer demand and competitive landscapes.
 
 ## The Business lens
-   
+   ### Overiew
+The Business Lens focuses on identifying potential market opportunities for businesses across different locations and industries. This dashboard helps users evaluate where new businesses may have stronger opportunities based on opportunity scores and competition levels.   
+   ### Map Visualization
+The map shows the geographic distribution of businesses across selected states.
+   + Each circle represents aggregated business activity within a location.
+   + Color represents the average opportunity score, allowing users to quickly identify areas with stronger or weaker business opportunities.
+   + Size represents the relative concentration of businesses or activity in that location.
+This visualization helps highlight regions where market opportunities may be stronger for new businesses.
+   ### Filters
+The dashboard includes interactive filters that allow users to explore the data from different perspectives:
+   + State: Filter results by geographic region.
+   + City: Focus on specific local markets.
+   + Choose Category: Analyze business opportunities within specific industries.
+
+These filters allow users to dynamically explore how opportunity and competition vary across different locations and business categories.
+
+
+   ### Opportunity vs Competition Scatter Plot
 
 ## Accessing the Dashboard
 
@@ -199,6 +216,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

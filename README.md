@@ -84,6 +84,7 @@ For the Bar Chart:
    => This helps users understand: which cities may provide better business opportunities and how opportunity varies across different locations.
 
 For the Scatter Plot: compares opportunity and competition for businesses.
+
     + X-axis: Competition Score
     + Y-axis: Opportunity Score
     The chart is divided into four quadrants using average values, which represent different market conditions.
@@ -145,6 +146,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

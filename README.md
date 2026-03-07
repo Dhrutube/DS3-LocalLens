@@ -55,6 +55,14 @@ This project used multiple data sources
          * Sentiment group: Positive reviews vs. Negative reviews (based on star ratings)
       * This segmentation allowed us to compare how customer priorities differ across geographic and business contexts.
 
+2. Text Processing
+      * Extracted bigrams (two-word phrases) to capture more meaningful expressions such as “fast service” or “friendly staff”
+      * We used TF-IDF (Term Frequency–Inverse Document Frequency) to identify phrases that were important within each review group.
+
+3. Extracting Key Themes
+      * For each segment (e.g., Urban Restaurants – Positive Reviews), we computed the top 20 bigrams with the highest TF-IDF scores. These phrases represent themes that frequently appear in that segment's reviews while remaining distinctive compared to other reviews.
+         * Examples of extracted phrases include: fast service, friendly staff, slow service
+         * These phrases were then compiled into a dataset used for visualization in Tableau.
 
 ## Tableau Dashboard
 
@@ -154,6 +162,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

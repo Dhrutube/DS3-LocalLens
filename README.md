@@ -342,7 +342,7 @@ Future work could enhance the opportunity analysis by incorporating demographic 
 - Median household income
 - Tourism activity
 - Foot traffic estimates
-=> Combining these variables with existing competition and sentiment metrics would allow the model to better estimate market demand and improve the accuracy of business opportunity predictions.
+- => Combining these variables with existing competition and sentiment metrics would allow the model to better estimate market demand and improve the accuracy of business opportunity predictions.
 ---
 
 ## Citation:
@@ -356,6 +356,7 @@ Future work could enhance the opportunity analysis by incorporating demographic 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

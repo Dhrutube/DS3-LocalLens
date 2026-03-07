@@ -239,13 +239,13 @@ These phrases reveal common issues customers encounter.
 
 Users can analyze sentiment using:
 
-#### Area Type
+##### Area Type
 
 - Urban  
 - Suburban  
 - Rural  
 
-#### Business Type
+##### Business Type
 
 - Restaurant  
 - Non-Restaurant  
@@ -272,11 +272,11 @@ Users can explore volatility using:
 
 #### Charts
 
-#### Map
+##### Map
 
 Hover over a state to see summary metrics and click to update the volatility chart.
 
-#### Line Chart
+##### Line Chart
 
 Businesses are grouped into **bins based on number of reviews**, and the top categories per state are displayed based on volatility.
 
@@ -338,6 +338,7 @@ Combining these variables with existing competition and sentiment metrics would 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

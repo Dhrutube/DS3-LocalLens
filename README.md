@@ -260,7 +260,7 @@ The **Review Volatility dashboard** explores how review patterns vary across sta
 
 ---
 
-### Filters
+#### Filters
 
 Users can explore volatility using:
 
@@ -270,16 +270,14 @@ Users can explore volatility using:
 
 ---
 
-### Charts
+#### Charts
 
-#### Map
-
+##### Map
 Hover over a state to see summary metrics and click to update the volatility chart.
 
-#### Line Chart
+##### Line Chart
 
 Businesses are grouped into **bins based on number of reviews**, and the top categories per state are displayed based on volatility.
-
 This visualization helps identify categories with **stable vs highly variable customer feedback**.
 
 ---
@@ -338,6 +336,7 @@ Combining these variables with existing competition and sentiment metrics would 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

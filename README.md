@@ -330,8 +330,6 @@ Future work could enhance the opportunity analysis by incorporating demographic 
 Combining these variables with existing competition and sentiment metrics would allow the model to better estimate market demand and improve the accuracy of business opportunity predictions.
 ---
 
-## Project information
-
 ## Citation:
 1. Li, J. (n.d.). Google Local review data. https://mcauleylab.ucsd.edu/public_datasets/gdrive/googlelocal/
 
@@ -343,6 +341,7 @@ Combining these variables with existing competition and sentiment metrics would 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

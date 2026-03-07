@@ -4,41 +4,64 @@
 
 The final product is an interactive Tableau dashboard that gives customers and businesses a new lens through which to search for their next meal or decide where to locate across two different cities.
 
-**Live Dashboard**: ___________addlink___________
+---
+
+# Accessing the Dashboard
+
+👉 **Live Tableau Dashboard:**  
+https://public.tableau.com/views/your-dashboard-link
 
 ---
 ## Data Collection
 
-This project used multiple data sources
+This project uses multiple datasets from external sources.
 
-1. **Mcauleylab.ucsd.edu Google Local Data (2021):** A web-scraped dataset containing individual review data and aggregate review trends for every business in every state in the United States.
-   - Metadata:
-  
+## Google Local Data – McAuley Lab (UC San Diego)
 
+Source:  
+https://mcauleylab.ucsd.edu/public_datasets/gdrive/googlelocal/
 
-### Metadata Datasets
+This dataset contains web-scraped Google Maps review data and business metadata across the United States.
 
-* **name**: Name of business.
-* **category**: List of relevant business categories.
-* **latitude / longitude**: Geographic location of business.
-* **price**: Relative price rating ($ to $$$$).
-   - Review Data:
+### Metadata Fields
 
-### Review Datasets
+- **name** – Name of the business  
+- **category** – List of associated Google business categories  
+- **latitude / longitude** – Geographic location of the business  
+- **price** – Relative price rating ($ to $$$$)
 
-* **user_id**: Unique identifier for the user.
-* **rating**: 1-5 star rating.
-* **text**: Review of business.
-* **gmap_id**: Unique identifier for business.
+### Review Data
 
-2. **simplemaps.com United States Cities Database:** City longitude and latitude as well as population statistics.
-   - (fill in )
+- **user_id** – Unique identifier for the user  
+- **rating** – Star rating (1–5)  
+- **text** – Customer review text  
+- **gmap_id** – Unique identifier for the business
 
-3. **The complete google business categories list (updated 2025)**: A dataset dividing complex google categories into subcategories and main larger categories for data set grouping.
-   - (filll in)
+---
 
+## United States Cities Database
 
+Source:  
+https://simplemaps.com/data/us-cities
 
+This dataset provides geographic information about U.S. cities, including:
+
+- city name  
+- latitude and longitude  
+- population statistics  
+
+It was used to match businesses to the **closest city location** using geographic coordinates.
+
+---
+
+## Google Business Categories Dataset
+
+Source:  
+https://www.lobstr.io/blog/google-business-categories
+
+This dataset provides a structured list of Google Business categories and was used to group complex Google categories into **broader standardized categories** for analysis.
+
+---
 
 ## Data Processing and Feature Engineering
 
@@ -118,37 +141,72 @@ These filters allow users to dynamically explore how opportunity and competition
 ## Accessing the Dashboard
 
 ___link to tableau public.com____
+## How to Use the Customer Lens
 
+### Filters
+- **Choose Category:** Select specific business categories to analyze customer activity within those industries.
+- **Choose City:** Focus on specific cities.
+- **Choose State:** Filter the data by state to explore regional patterns.
 
-# How to use the customer lens
+### Map
+The map displays businesses geographically using latitude and longitude coordinates.  
+Each point represents a business.
 
+- **Color:** Indicates the selected competition or relative score metric.
+- **Size:** Represents the number of reviews (customer engagement).
 
-# How to use the Business lens
-   ## Filter:
-1. State: Select the state you want to analyze.
-2. City: Choose a city within the selected state to focus on a more specific local market.
-3. Broad Category: Select the business category you want to explore
+This helps identify areas with high customer activity and varying competition levels.
 
-   ## Chart:
-For the map: The map visualization shows the geographic distribution of businesses based on the opportunity score. 
-Colors represent the opportunity score, allowing users to quickly identify areas where business opportunities may be higher. This helps users understand where potential market opportunities are concentrated geographically.
+### Metric Selector
+Users can switch between several metrics:
 
-For the Bar Chart:
-   + Top Categories: The Top Categories chart ranks business industries based on their average opportunity score.
-   => This helps identify: which industries may have stronger market potential and which categories appear to have higher opportunity overall.
-   + Top Cities: The Top Cities chart ranks cities based on their average opportunity score.
-   => This helps users understand: which cities may provide better business opportunities and how opportunity varies across different locations.
+- **Niche Competition Score**
+- **Broad Competition Score**
+- **Overall Category Relative Score**
+- **Overall City Relative Score**
 
-For the Scatter Plot: compares opportunity and competition for businesses.
+These metrics allow users to explore different perspectives on competition and market performance.
 
-    + X-axis: Competition Score
-    + Y-axis: Opportunity Score
-    The chart is divided into four quadrants using average values, which represent different market conditions.
-       
-     Top-left: high opportunity score and low competition => Good market for new businesses.
-     Top-right: high opportunity score and high comptetition => Strong market but competitive.
-     Bottom-left: low opportunity score and low competition => Weak market with low demand.
-     Bottom-right: low opportunity score and high competition => Saturated market with many competitors.
+---
+
+## How to Use the Business Lens
+
+### Filters
+- **State:** Select the state you want to analyze.
+- **City:** Choose a city within the selected state to focus on a specific local market.
+- **Broad Category:** Select the business category you want to explore.
+
+### Charts
+
+#### Map
+The map shows the geographic distribution of businesses based on the **opportunity score**.
+
+- **Color:** Opportunity score
+- **Size:** Relative concentration of businesses
+
+This helps users identify areas where business opportunities may be higher.
+
+#### Bar Charts
+
+**Top Categories**
+- Ranks industries based on their **average opportunity score**
+- Helps identify industries with stronger market potential.
+
+**Top Cities**
+- Ranks cities based on their **average opportunity score**
+- Helps identify cities with better business opportunities.
+
+#### Opportunity vs Competition Scatter Plot
+
+- **X-axis:** Competition Score  
+- **Y-axis:** Opportunity Score  
+
+The chart is divided into four quadrants using average values:
+
+- **Top-left:** High opportunity, low competition → Good market for new businesses
+- **Top-right:** High opportunity, high competition → Strong but competitive market
+- **Bottom-left:** Low opportunity, low competition → Weak market
+- **Bottom-right:** Low opportunity, high competition → Saturated market
 
 # How to use the Review Volatility:
    ## Filters:
@@ -216,6 +274,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

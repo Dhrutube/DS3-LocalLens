@@ -6,13 +6,13 @@ The final product is an interactive Tableau dashboard that gives customers and b
 
 ---
 
-# Accessing the Dashboard
+## Accessing the Dashboard
 
 👉 **Live Tableau Dashboard:**  
 https://public.tableau.com/shared/XMMQ7FD7R?:display_count=n&:origin=viz_share_link
 
 ---
-# Data Collection
+## Data Collection
 
 This project uses multiple datasets from external sources.
 
@@ -341,6 +341,7 @@ Combining these variables with existing competition and sentiment metrics would 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

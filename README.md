@@ -315,7 +315,15 @@ This visualization helps identify categories with **stable vs highly variable cu
 
 
 ## Future Enhancements
+### Demographic and Economic Data Integration
+Future work could enhance the opportunity analysis by incorporating demographic and economic indicators, such as:
 
+- Population density
+- Median household income
+- Tourism activity
+- Foot traffic estimates
+
+Combining these variables with existing competition and sentiment metrics would allow the model to better estimate market demand and improve the accuracy of business opportunity predictions.
 ---
 
 ## Project information
@@ -331,6 +339,7 @@ This visualization helps identify categories with **stable vs highly variable cu
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

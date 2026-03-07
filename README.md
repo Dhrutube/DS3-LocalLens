@@ -201,15 +201,82 @@ Low opportunity + high competition
 
 ---
 
-# Review Volatility
+# Sentiment Analysis Lens
+
+## Overview
+
+The **Sentiment Lens** analyzes the language used in customer reviews to uncover common themes in positive and negative feedback.
+
+This helps identify the factors that influence customer satisfaction and dissatisfaction.
+
+---
+
+## Map of States
+
+The map displays the states included in the review dataset.
+
+Selecting a state allows users to analyze sentiment patterns for that region.
+
+---
+
+## Top Positive Bigrams
+
+This chart shows the most common phrases appearing in **positive reviews**, such as:
+
+- great food  
+- great service  
+- highly recommend  
+- friendly staff  
+
+These phrases highlight aspects of businesses that customers value the most.
+
+---
+
+## Top Negative Bigrams
+
+This chart shows phrases frequently appearing in **negative reviews**, including:
+
+- bad service  
+- waste time  
+- long wait  
+- don't know  
+
+These phrases reveal common issues customers encounter.
+
+---
 
 ## Filters
 
-Users can explore review volatility using:
+Users can analyze sentiment using:
 
-- **Regions:** Rural, Suburban, Urban
-- **Business Categories:** Top 10 most frequent categories
-- **Metrics:** Selected comparison metric
+### Area Type
+
+- Urban  
+- Suburban  
+- Rural  
+
+### Business Type
+
+- Restaurant  
+- Non-Restaurant  
+
+These filters allow comparisons of customer feedback across different environments and industries.
+
+---
+
+# Review Volatility
+
+The **Review Volatility dashboard** explores how review patterns vary across states, business categories, and geographic regions.
+
+---
+
+## Filters
+
+Users can explore volatility using:
+
+- **Regions** – Rural, Suburban, Urban  
+- **Business Categories** – Top categories within each state  
+- **Metrics** – Selected comparison metric  
 
 ---
 
@@ -221,9 +288,9 @@ Hover over a state to see summary metrics and click to update the volatility cha
 
 ### Line Chart
 
-The line chart groups businesses into **bins based on number of reviews** and shows the **top 10 categories per state** based on review volatility.
+Businesses are grouped into **bins based on number of reviews**, and the top categories per state are displayed based on volatility.
 
-This allows comparison of **how stable or volatile customer feedback is across categories and regions**.
+This visualization helps identify categories with **stable vs highly variable customer feedback**.
 
 ---
 
@@ -281,6 +348,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

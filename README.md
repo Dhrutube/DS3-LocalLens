@@ -63,8 +63,7 @@ This dataset provides a structured list of Google Business categories and was us
 ## Data Processing and Feature Engineering
 
 * **Processing:** Includes sentiment analysis via **VADER**, feature engineering (Chain vs. Independent), and **Z-Score** normalization.
-* **Storage:** Flattened CSV files managed via GitHub for version-controlled, BI-ready exports.
-(add more)
+* **Storage:** Flattened CSV files managed via GitHub for version-controlled, Tableau-ready exports.
 
 ---
 
@@ -356,6 +355,7 @@ Future work could enhance the opportunity analysis by incorporating demographic 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

@@ -107,6 +107,8 @@ For the Scatter Plot: compares opportunity and competition for businesses.
      Bottom-left: low opportunity score and low competition => Weak market with low demand.
      Bottom-right: low opportunity score and high competition => Saturated market with many competitors.
 
+For the Line Chart: The line chart represents the volatility of the review rating of different business categories based on the number of reviews. The chart changes state to state based on the state that is selected, highlighting the different trends among business types across the US.
+
 ---
 
 UPDATE this
@@ -162,6 +164,7 @@ V
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

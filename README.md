@@ -221,26 +221,14 @@ Selecting a state allows users to analyze sentiment patterns for that region.
 
 ## Top Positive Bigrams
 
-This chart shows the most common phrases appearing in **positive reviews**, such as:
-
-- great food  
-- great service  
-- highly recommend  
-- friendly staff  
-
+This chart shows the most common phrases appearing in **positive reviews**
 These phrases highlight aspects of businesses that customers value the most.
 
 ---
 
 ## Top Negative Bigrams
 
-This chart shows phrases frequently appearing in **negative reviews**, including:
-
-- bad service  
-- waste time  
-- long wait  
-- don't know  
-
+This chart shows phrases frequently appearing in **negative reviews**
 These phrases reveal common issues customers encounter.
 
 ---
@@ -343,6 +331,7 @@ This visualization helps identify categories with **stable vs highly variable cu
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 

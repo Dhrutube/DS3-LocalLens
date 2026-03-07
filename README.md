@@ -281,7 +281,13 @@ Businesses are grouped into **bins based on number of reviews**, and the top cat
 This visualization helps identify categories with **stable vs highly variable customer feedback**.
 
 ---
-
+## Limitations
+### Sentiment Analysis
+Several limitations should be considered when interpreting this analysis:
+  * Some reviews contain ratings without written text, reducing available language data.
+  * Reviews are predominantly in English, which may underrepresent experiences from multilingual communities.
+  * TF-IDF highlights frequent phrases, but it does not capture deeper context or sarcasm.
+For these reasons, the analysis should be interpreted as directional insights into customer themes rather than a definitive sentiment score.
 
 ## 📂 Repository Structure
 ```plaintext
@@ -346,6 +352,7 @@ Combining these variables with existing competition and sentiment metrics would 
 * [ ] **Phase 8-10:** Finalizing sentiment word counts, loading state-wide data (TX, CA, NY), and Dino Cage Presentation.
 
 ---
+
 
 
 
